@@ -6,7 +6,7 @@
   <title>Spots Profile</title>
   <style>
     body {
-      font-family: verdana, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #f8f1e4;
       margin: 0;
       padding: 0;
@@ -73,6 +73,7 @@
       cursor: pointer;
       margin-top: 200px;
       margin-bottom: 10px;
+      font-size: 13px;
       text-decoration: none;
     }
     .new-post-button:hover
@@ -96,8 +97,7 @@
     .card-text {
       display: flex;
       justify-content: space-between;
-      font-size: 14px;
-      font-weight:600;
+      font-size: 15px;
     }
 
     .like-button {
@@ -142,8 +142,9 @@
     display: flex;
   }
   .new-post-button {
+    text-align: center;
     margin-top: 20px;
-    width: 100%;
+    width: 320px;
   }
   .card img{
     width: 100%;
@@ -151,7 +152,6 @@
   }
   .card-text{
     font-size: 20px;
-    font-weight: bold;
   }
 }
 
@@ -198,6 +198,12 @@
       margin-top: 0;
     }
 
+    .modal img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
     .close-btn {
       position: absolute;
       top: 10px;
@@ -232,6 +238,14 @@
     .submit-btn:hover {
       background: #333;
     }
+    .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
     
   </style>
 </head>
@@ -255,54 +269,67 @@
 
     <!-- Image Grid -->
     <div class="grid">
-      <div class="card">
-        <img src="val-thorens.jpeg" alt="Val Thorens">
-        <div class="card-text">
-          <p>Val Thorens</p>
-          <button class="like-button">♡</button>
-        </div>
-      </div>
 
       <div class="card">
-        <img src="restaurant.jpeg" alt="Restaurant terrace">
-        <div class="card-text">
-          <p>Restaurant terrace</p>
-          <button class="like-button">♡</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="cafe.jpeg" alt="An outdoor cafe">
-        <div class="card-text">
-          <p>An outdoor cafe</p>
-          <button class="like-button">♡</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="bridge.jpeg" alt="A very long bridge">
-        <div class="card-text">
-          <p>A very long bridge</p>
-          <button class="like-button">♡</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="tunnel.jpg" alt="Tunnel with morning light">
-        <div class="card-text">
-          <p>Tunnel with morning light</p>
-          <button class="like-button">♡</button>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="mountain.jpeg" alt="Mountain house">
-        <div class="card-text">
-          <p>Mountain house</p>
-          <button class="like-button">♡</button>
-        </div>
-      </div>
+    <a href="#img1">
+      <img src="val-thorens.jpeg" alt="Val Thorens">
+    </a>
+    <div class="card-text">
+      <p>Val Thorens</p>
+      <button class="like-button">♡</button>
     </div>
+  </div>
+
+      
+      <div class="card">
+    <a href="#img2">
+      <img src="restaurant.jpeg" alt="Restaurant terrace">
+    </a>
+    <div class="card-text">
+      <p>Restaurant terrace</p>
+      <button class="like-button">♡</button>
+    </div>
+  </div>
+
+<div class="card">
+    <a href="#img3">
+      <img src="cafe.jpeg" alt="An outdoor Cafe">
+    </a>
+    <div class="card-text">
+      <p>An outdoor Cafe</p>
+      <button class="like-button">♡</button>
+    </div>
+  </div>
+
+      <div class="card">
+    <a href="#img4">
+      <img src="bridge.jpeg" alt="A very Long bridge">
+    </a>
+    <div class="card-text">
+      <p>A very long bridge</p>
+      <button class="like-button">♡</button>
+    </div>
+  </div>
+
+      <div class="card">
+    <a href="#img5">
+      <img src="tunnel.jpg" alt="Tunnel with morning light">
+    </a>
+    <div class="card-text">
+      <p>Tunnel with morning light</p>
+      <button class="like-button">♡</button>
+    </div>
+  </div>
+
+      <div class="card">
+    <a href="#img6">
+      <img src="mountain.jpeg" alt="Mountain house">
+    </a>
+    <div class="card-text">
+      <p>Mountain house</p>
+      <button class="like-button">♡</button>
+    </div>
+  </div>
   </div>
 
   <footer class="footer">
@@ -332,6 +359,37 @@
     </div>
   </div>
 
+
+  <!-- Modal for Val Thorens -->
+<div id="img1" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="val-thorens.jpeg" alt="Val Thorens Enlarged">
+</div>
+
+<div id="img2" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="restaurant.jpeg" alt="Restaurant terrace Enlarged">
+</div>
+
+<div id="img3" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="cafe.jpeg" alt="An outdoor Cafe Enlarged">
+</div>
+
+<div id="img4" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="bridge.jpeg" alt="A very Long bridge Enlarged">
+</div>
+
+<div id="img5" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="tunnel.jpg" alt="Tunnel with morning light Enlarged">
+</div>
+
+<div id="img6" class="modal">
+  <a href="#" class="close">&times;</a>
+  <img src="mountain.jpeg" alt="Mountain house Enlarged">
+</div>
 
 </body>
 </html>

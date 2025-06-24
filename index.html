@@ -28,41 +28,51 @@
       padding: 0 20px;
     }
 
-    .profile {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-      border-bottom: 1px solid black;
-    }
+  .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
 
-    .profile-info {
-      display: flex;
-      align-items: center;
-    }
-
-    .profile img {
+     .profile img {
       width: 200px;
       height: 200px;
       margin-right: 15px;
       border-radius: 10px;
     }
 
-    .profile-details {
-      line-height: 1.4;
-      padding-top: -10px;
-    }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .profile-details {
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 75px;
+  }
 
     .edit-link {
-      padding-top: 40px;
       font-size: 14px;
       color: #555;
+      border: none;
+      cursor: pointer;
+      margin-top: 200px;
+      margin-bottom: 10px;
       text-decoration: none;
+      background-color: #f8f1e4;
+      justify-content: space-between;
     }
     .edit-link:hover{
       color: black;
     }
+
 
     .new-post-button {
       background-color: rgba(0, 0, 0, 0.632);
@@ -255,7 +265,7 @@
 
   <div class="container">
     <!-- Profile Section -->
-    <div class="profile">
+    <!-- <div class="profile">
       <div class="profile-info">
         <img src="pi.jpeg" alt="User Photo">
         <div class="profile-details">
@@ -265,7 +275,26 @@
         </div>
       </div>
       <a href="#postModal" class="new-post-button">+ New Post</a>
-    </div>
+    </div> -->
+
+      <div class="profile">
+        <div class="">
+          <!-- Profile Image -->
+           <img src="pi.jpeg" alt="User Photo">
+        </div>
+        <div class="profile-info">
+          <!-- Profile -->
+           <div class="profile-details">
+            <h2>Afape Oluwamayomide</h2>
+            <p style="font-size: 14px; color: gray;">Civil Aviator</p>
+           </div>
+           <div class="button-row">
+            <a href="#editModal" class="edit-link">✎ Edit Profile</a>
+            <a href="#postModal" class="new-post-button">+New Post</a>
+           </div>
+        </div>
+      </div>
+    
 
     <!-- Image Grid -->
     <div class="grid">
